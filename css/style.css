@@ -1,22 +1,28 @@
 /* General styles */
+
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+
 span {
     font-weight: 300;
     color: #1ac056;
 }
+
 /* General styles - END */
 
 /* nagivation menu */
+
 #main-menu {
     background-color: #fff;
     list-style-type: none;
-    position: fixed; /* Make it stick, even on scroll */
+    position: fixed;
+    /* Make it stick, even on scroll */
     overflow: hidden;
     width: 100%;
     z-index: 10;
@@ -33,7 +39,7 @@ li {
 }
 
 .menu-item a {
-    display:inline-block;
+    display: inline-block;
     padding: 25px;
     color: #1ac056;
     text-decoration: none;
@@ -44,9 +50,11 @@ li {
 .menu-item a:hover {
     color: #291f1a;
 }
+
 /* navigation menu - END */
 
 /* header */
+
 #main-header {
     height: 100vh;
     background-image: url(../img/header-background.jpg);
@@ -55,6 +63,7 @@ li {
     position: relative;
     color: #fff;
 }
+
 #main-header .header-caption {
     position: absolute;
     top: 50%;
@@ -63,25 +72,30 @@ li {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-#main-header .header-caption h1, 
+
+#main-header .header-caption h1,
 #main-header .header-caption h2 {
     font-weight: 100;
 }
+
 #main-header .header-caption h1 {
     font-size: 3em;
 }
+
 #main-header .header-caption h2 {
     font-size: 2em;
 }
+
 /* header - END */
 
 /* about me */
+
 #about-me {
     background-color: #f9fcfe;
     display: block;
-    position: relative;
     padding: 20px 40px 70px 100px;
 }
+
 #about-me h3 {
     text-align: center;
     margin: 0;
@@ -90,40 +104,49 @@ li {
     font-size: 2em;
     padding: 25px;
 }
-#about-me img, #about-me p {
+
+#about-me img,
+#about-me p {
     display: inline-block;
 }
+
 #about-me div {
     padding: 0px 50px 0px 50px;
 }
+
 #about-me img {
     width: 40%;
     height: 40%;
     border: 15px solid #fff;
-    border-radius: 5%; 
+    border-radius: 5%;
 }
+
 #about-me p {
     font-weight: 300;
     height: 50%;
-    width: 50%;    
+    width: 50%;
     float: right;
     line-height: 1.5em;
     margin: 0;
 }
+
 hr {
     margin: 0;
     height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
+
 /* about me - END */
 
 /* my skills */
+
 #my-skills {
     display: block;
     position: relative;
     padding: 20px 40px 70px 100px;
 }
+
 #my-skills h3 {
     text-align: center;
     margin: 0;
@@ -132,27 +155,40 @@ hr {
     font-size: 2em;
     padding: 25px;
 }
+
 #my-skills p {
-    font-weight: 300;   
+    font-weight: 300;
     line-height: 1.5em;
     margin: 0;
     text-align: center;
     padding: 20px;
 }
+
 #my-skills img {
-    padding: 20px;   
+    padding: 20px;
 }
+
 .image {
     display: inline-block;
-    
+
 }
+
 #my-skills div {
     text-align: center;
 }
+
 /* my skills - END */
 
 /* my portfolio */
+
+#my-portfolio {
+    /* whole section */
+    display: block;
+    position: relative;
+}
+
 #my-portfolio h3 {
+    /* header*/
     text-align: center;
     margin: 0;
     display: block;
@@ -160,16 +196,107 @@ hr {
     font-size: 2em;
     padding: 25px;
 }
-#my-portfolio img {
-    width: 30%;
+
+.all-portfolio-items {
+    padding: 20px 40px;
 }
 
+.portfolio-item {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 30%;
+    background-color: #213a50;
+}
+
+.item-content {
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+
+.portfolio-item img {
+    opacity: 1;
+    display: inline-block;
+    min-width: 50%;
+    height: 100%;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.item-mask {
+    margin: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.portfolio-item:hover img {
+    opacity: 0.3;
+}
+
+.portfolio-item:hover .item-mask {
+    opacity: 1;
+}
 
 /* my portfolio - END */
 
+/* footer */
+#contact {
+    background-color: #213b50;
+    padding: 50px;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+}
+#contact h2 {
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0;
+}
+#contact-content {
+    font-style: normal;
+}
+#contact-content a {
+    color: #1ac056;
+}
+
+#contact-content, #form {
+    display: inline-block;
+}
+#form {
+    text-align: right;
+    position: absolute;
+    right: 10%;
+    
+}
+input {
+    display: block;
+    
+}
 
 
+/* footer - END */
 
+#copyright {
+    margin: 0;
+    display: block;
+    width: 100%;
+    background-color: #15242f;
+    font-weight: 300;
+    color: #fff;
+    padding: 5px 20px;
+}
+#copyright a {
+    color: #fff;
+    text-decoration: none;
+}
 
 
 
