@@ -1,0 +1,33 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* General styles - END */
+
+/* nagivation menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+    z-index: 10;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display:inline-block;
+    color: #1ac056;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* navigation menu - END */
