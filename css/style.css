@@ -118,6 +118,40 @@ hr {
 }
 /* about me - END */
 
+/* my skills */
+#my-skills {
+    display: block;
+    position: relative;
+    padding: 20px 40px 70px 100px;
+}
+#my-skills h3 {
+    text-align: center;
+    margin: 0;
+    display: block;
+    font-weight: 100;
+    font-size: 2em;
+    padding: 25px;
+}
+#my-skills p {
+    font-weight: 300;   
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+#my-skills img {
+    padding: 20px;   
+}
+.image {
+    display: inline-block;
+    
+}
+#my-skills div {
+    text-align: center;
+}
+
+
+/* my skills - END */
 
 
 
