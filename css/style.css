@@ -262,9 +262,20 @@ hr {
 }
 #contact-content {
     font-style: normal;
+    line-height: 1.5em;
+    padding: 100px 100px 100px 0px;
 }
 #contact-content a {
     color: #1ac056;
+}
+
+#fontawesome i {
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
 }
 
 #contact-content, #form {
@@ -274,11 +285,27 @@ hr {
     text-align: right;
     position: absolute;
     right: 10%;
-    
+    width: 40%;  
 }
-input {
+
+input[type="text"], input[type="email"], textarea {
     display: block;
-    
+    background-color: #2b4a64;
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    padding: 15px 15px
+}
+input[type="submit"]{
+    background-color: #1ac056;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 1px solid #fff;
+}
+textarea {
+    height: 100px;
 }
 
 
