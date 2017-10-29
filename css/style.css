@@ -6,28 +6,72 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+span {
+    font-weight: 300;
+    color: #1ac056;
+}
 /* General styles - END */
 
 /* nagivation menu */
-ul {
+#main-menu {
+    background-color: #fff;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     position: fixed; /* Make it stick, even on scroll */
     overflow: hidden;
-    text-align: right;
     width: 100%;
     z-index: 10;
+}
+
+#main-menu ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
 }
 
 li {
     display: inline;
 }
 
-li a {
+.menu-item a {
     display:inline-block;
+    padding: 25px;
     color: #1ac056;
-    padding: 14px 16px;
     text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+
+.menu-item a:hover {
+    color: #291f1a;
 }
 /* navigation menu - END */
+
+/* header */
+#main-header {
+    height: 100vh;
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+#main-header .header-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#main-header .header-caption h1, 
+#main-header .header-caption h2 {
+    font-weight: 100;
+}
+#main-header .header-caption h1 {
+    font-size: 3em;
+}
+#main-header .header-caption h2 {
+    font-size: 2em;
+}
+/* header - END */
+
