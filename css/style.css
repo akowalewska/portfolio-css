@@ -114,49 +114,21 @@ section, footer {
 
 #about-me {
     background-color: #f9fcfe;
-    display: block;
-    padding: 20px 40px 70px 100px;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 }
 
-#about-me h3 {
+#about-me figure {
+    margin: 0;
     text-align: center;
-    margin: 0;
-    display: block;
-    font-weight: 100;
-    font-size: 2em;
-    padding: 25px;
 }
 
-#about-me img,
-#about-me p {
-    display: inline-block;
-}
 
-#about-me div {
-    padding: 0px 50px 0px 50px;
-}
-
-#about-me img {
-    width: 40%;
-    height: 40%;
-    border: 15px solid #fff;
-    border-radius: 5%;
-}
-
-#about-me p {
-    font-weight: 300;
-    height: 50%;
-    width: 50%;
-    float: right;
-    line-height: 1.5em;
-    margin: 0;
-}
-
-hr {
-    margin: 0;
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+#about-me figure img {
+    max-width: 100%;
+    max-height: 350px;
+    border: 10px solid #fff;
+    border-radius: 10%;
 }
 
 /* about me - END */
