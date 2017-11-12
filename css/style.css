@@ -246,7 +246,7 @@ section, footer {
     color: #1ac056;
 }
 
-#contact .social-icons {
+#contact .social-icon {
     margin-top: 40px;
 }
 
@@ -268,7 +268,7 @@ section, footer {
     background-color: #fff;
 }
 
-#contact input:not[type="submit"], #contact textarea {
+#contact input:not([type="submit"]), #contact textarea {
     display: block;
     background-color: #456681;
     border: none;
