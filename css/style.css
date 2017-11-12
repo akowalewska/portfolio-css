@@ -296,13 +296,9 @@ section, footer {
 /* footer - END */
 
 .copyright {
-    margin: 0;
-    display: block;
-    width: 100%;
-    background-color: #15242f;
-    font-weight: 300;
+    background-color: #142634;
     color: #fff;
-    padding: 5px 20px;
+    padding: 10px 100px;
 }
 .copyright a {
     color: #fff;
