@@ -229,80 +229,73 @@ section, footer {
 /* footer */
 #contact {
     background-color: #213b50;
-    padding: 25px 50px;
     color: #fff;
-    font-weight: 300;
-    position: relative;
+    overflow: hidden;
 }
 
 #contact h2 {
-    font-size: 2em;
-    font-weight: 100;
-    margin: 0;
-    padding: 15px;
+    text-align: left;
 }
 
-#contact-content {
+#contact address {
     font-style: normal;
-    line-height: 1.5em;
-    padding: 70px 100px 70px 15px;
+    line-height: 1.5;
 }
 
-#contact-content a {
+#contact address a {
     color: #1ac056;
 }
 
-#fontawesome a {
-    display: inline-block;
+#contact .social-icons {
+    margin-top: 40px;
 }
 
-#fontawesome i {
+#contact .social-icon {
     border: 1px solid #fff;
     text-align: center;
-    padding-top: 10%;
-    font-size: 1.5em;
-    margin: 15px;
-    width: 40px;
-    height: 40px;
-}
-.icons {
+    font-size: 2em;
     color: #fff;
-}
-
-#contact-content, #form {
-    display: inline-block;
-}
-#form {
-    text-align: right;
-    position: absolute;
-    right: 10%;
-    width: 40%;  
-}
-
-input[type="text"], input[type="email"], textarea {
-    display: block;
-    background-color: #2b4a64;
-    border: none;
-    color: #fff;
-    width: 100%;
+    width: 50px;
     height: 50px;
-    padding: 15px 15px
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 10px;
+    transition: all 0.3s;
 }
 
-input[type="submit"]{
+#contact .social-icon:hover {
+    color: #213b50;
+    background-color: #fff;
+}
+
+#contact input:not[type="submit"], #contact textarea {
+    display: block;
+    background-color: #456681;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#contact input[type="submit"]{
     background-color: #1ac056;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     font-weight: 600;
-    border: 1px solid #fff;
+    border: none;
+    float: right;
+    transition: all 0.3s;
 }
 
-textarea {
-    height: 100px;
+#contact input[type="submit"]:hover {
+	cursor: pointer;
+	color: #1ac056;
+	background-color: #fff;
 }
+
 /* footer - END */
 
-#copyright {
+.copyright {
     margin: 0;
     display: block;
     width: 100%;
@@ -311,7 +304,7 @@ textarea {
     color: #fff;
     padding: 5px 20px;
 }
-#copyright a {
+.copyright a {
     color: #fff;
     text-decoration: none;
 }
